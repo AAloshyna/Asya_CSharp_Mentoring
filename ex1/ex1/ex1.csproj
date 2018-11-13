@@ -42,10 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exercises\EmployeeForAnalyzer.cs" />
     <Compile Include="Exercises\EmployeePerformanceAnalyzer.cs" />
-    <Compile Include="Exercises\EnumSchoolSubjects.cs" />
+    <Compile Include="Exercises\RectangleArea.cs" />
+    <Compile Include="Exercises\SchoolSubjects.cs" />
     <Compile Include="Exercises\Exercise13.cs" />
     <Compile Include="Exercises\Exercise14.cs" />
+    <Compile Include="Exercises\StructRectangle.cs" />
     <Compile Include="Exercises\Student.cs" />
     <Compile Include="Exercises\Employee.cs" />
     <Compile Include="Exercises\Exercise4.cs" />

@@ -44,8 +44,8 @@ namespace ex1.Exercises
             }
         }
 
-        private double _salary;
-        public double Salary { get; set; }
+        private double _salaryPerMonthWithoutTaxes;
+        public double SalaryPerMonthWithoutTaxes { get; set; }
 
         public Employee()
         {
@@ -55,23 +55,25 @@ namespace ex1.Exercises
         {
             Name = name;
             Surname = surname;
-            Salary = salary;
+            SalaryPerMonthWithoutTaxes = salary;
         }
 
         public void DisplayEmployeeInfo()
         {
-            Console.WriteLine($"Name:{Name}, Surname: {Surname}, Salary per month: {Salary}");
+            Console.WriteLine($"Name:{Name}, Surname: {Surname}, Salary per month: {SalaryPerMonthWithoutTaxes}");
         }
 
-        public void GetEmployeeSalaryPerYear(double Salary)
+        public double GetEmployeeSalaryPerYear(double salaryPerMonthWithoutTaxes)
         {
-            Console.WriteLine($"Salary per year: {Salary*12}");
+            Console.WriteLine($"Salary per year: {SalaryPerMonthWithoutTaxes * 12}");
+            return salaryPerMonthWithoutTaxes * 12;
         }
 
-        public void GetEmployeeSalaryWithTaxes(double Salary, double tax)
+        public double GetEmployeeSalaryWithTaxes(double salaryPerMonthWithoutTaxes, double tax)
         {
-           var procent = ((Salary * 12) * tax) / 100;
-           Console.WriteLine($"Salary with taxes: {(Salary * 12)-procent}");
+           var procent = ((salaryPerMonthWithoutTaxes * 12) * tax) / 100;
+           Console.WriteLine($"Salary with taxes: {(salaryPerMonthWithoutTaxes * 12)-procent}");
+           return (salaryPerMonthWithoutTaxes * 12) - procent;
         }
 
     }

@@ -8,7 +8,7 @@ namespace ex1.Exercises
 {
     class Exercise14
     {
-        public static void Hours()
+        public static void CalculateHours()
         {
             var dt1 = DateTime.Parse("01/01/2000 00:00:00");
             var dt2 = DateTime.Now;

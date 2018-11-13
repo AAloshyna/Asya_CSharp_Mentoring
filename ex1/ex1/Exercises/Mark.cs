@@ -8,11 +8,11 @@ namespace ex1.Exercises
 {
     public class Mark
     {
-        private EnumSchoolSubjects _subjectName { get; set; }
+        private SchoolSubjects _subjectName { get; set; }
 
         public double Value { get; set; }
 
-        public Mark(EnumSchoolSubjects subjectName, double value)
+        public Mark(SchoolSubjects subjectName, double value)
         {
 
             _subjectName = subjectName;
